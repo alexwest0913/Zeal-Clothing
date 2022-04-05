@@ -74,6 +74,13 @@ body {
   cursor: pointer;
 }
 
+.lookbook {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
 .products {
   display: flex;
   align-items: center;
@@ -95,9 +102,10 @@ body {
 .s-head {
   text-align: center;
   font-family: 'Gruppo', cursive;
-  font-size: 50px;
+  font-size: 60px;
   border-bottom: 1px solid black;
-  margin: 50px 100px;
+  margin: 150px 100px 20px 100px;
+  padding-bottom: 80px;
 }
 
 .price {
@@ -122,6 +130,15 @@ button:hover {
 .name {
   margin: 30px 0px;
   font-family: 'Gruppo', cursive;
+}
+
+.c-heading {
+  font-family: sans-serif;
+  padding: 0px 70px;
+}
+
+.c-total {
+  padding: 20px 70px;
 }
 
 @media (max-width: 960px) {

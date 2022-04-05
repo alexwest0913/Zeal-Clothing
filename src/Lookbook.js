@@ -1,13 +1,20 @@
 import React from 'react';
-import Header from './Header'
-import Shirt from './Shirt'
+import Header from './Header';
+import data from './data';
 import './App.css'
 
-const Lookbook = () => {
+const Lookbook = (props) => {
+  const {products, onAdd} = data;
   return (
     <>
       <Header />
-      <Shirt />
+      <div className="lookbook">
+        {products.map((product, id) => (
+          <div className="products" key={id}>
+            <img src={product.img}/>
+          </div>
+        ))}
+      </div>
     </>
   )
 }

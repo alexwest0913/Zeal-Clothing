@@ -1,59 +1,14 @@
 import React from 'react';
+import './App.css';
 
-function Cart({ cart, setCart }) {
-  const getTotalSum = () => {
-    return cart.reduce(
-      (sum, { cost, quantity }) => sum + cost * quantity,
-      0
-    );
-  };
-
-  const clearCart = () => {
-    setCart([]);
-  };
-
-  const setQuantity = (product, amount) => {
-    const newCart = [...cart];
-    newCart.find(
-      (item) => item.name === product.name
-    ).quantity = amount;
-    setCart(newCart);
-  };
-
-  const removeFromCart = (productToRemove) => {
-    setCart(
-      cart.filter((product) => product !== productToRemove)
-    );
-  };
-
+function Cart(props) {
+  const { cart, onAdd } = props;
   return (
     <>
-      <h1>Cart</h1>
-      {cart.length > 0 && (
-        <button onClick={clearCart}>Clear Cart</button>
-      )}
-      <div className="products">
-        {cart.map((product, idx) => (
-          <div className="product" key={idx}>
-            <h3>{product.title}</h3>
-            <h4>${product.price}</h4>
-            <input
-              value={product.quantity}
-              onChange={(e) =>
-                setQuantity(
-                  product,
-                  parseInt(e.target.value)
-                )
-              }
-            />
-            <img src={product.img} alt={product.title} />
-            <button onClick={() => removeFromCart(product)}>
-              Remove
-            </button>
-          </div>
-        ))}
+      <h1 className='c-heading'>Cart</h1>
+      <div className='c-total'>
+        {cart.length === 0 && <div>Cart is Empty</div>}
       </div>
-      <div>Total Cost: ${getTotalSum()}</div>
     </>
   );
 }
