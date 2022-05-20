@@ -1,0 +1,173 @@
+.contact-div {
+  font-family: 'Gruppo', cursive;
+  border: 1px solid #EAEAEA;
+  margin: 0px 50px 50px 50px;
+}
+
+.contact-head {
+  font-size: 45px;
+  padding: 30px 0px 30px 50px;
+  margin: 0px 50px;
+  font-weight: bold;
+  font-family: 'Gruppo', cursive;
+  background-color: #EAEAEA;
+}
+
+.form-div {
+  padding: 40px;
+}
+
+.names {
+  margin: 20px 0px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.fname {
+  padding: 0px 20px;
+}
+
+.lname {
+  padding: 0px 20px;
+}
+
+.name-input {
+  padding: 10px;
+  margin: 10px 0px;
+  width: 255px;
+}
+
+.email-div {
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.email {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.e-input {
+  width: 550px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.sub-div {
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.subject {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.sub-input {
+  width: 550px;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.mess-div {
+  margin: 55px 0px 20px 0px;
+  text-align: center;
+}
+
+.message {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.mess-input {
+  font-family: 'Gruppo', cursive;
+  padding: 50px;
+  width: 550px;
+  font-size: 16px;
+  border: 1px solid #EAEAEA;
+  margin: 10px 0px 0px 0px;
+}
+
+.mess-btn {
+  border: none;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: 'Gruppo', cursive;
+  font-size: 18px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.mess-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .e-input {
+    width: 300px;
+  }
+  .name-input {
+    width: 150px;
+  }
+  .sub-input {
+    width: 300px;
+  }
+  .mess-input {
+    width: 300px;
+  }
+  .contact-head {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .names {
+    display: block;
+  }
+  .name-input {
+    width: 250px;
+  }
+  .e-input {
+    width: 250px;
+  }
+  .sub-input {
+    width: 250px;
+  }
+  .mess-input {
+    width: 250px;
+  }
+  .mess-btn {
+    width: 250px;
+  }
+  .contact-div {
+    margin: 0px;
+  }
+  .contact-head {
+    margin: 0px;
+    font-size: 40px;
+  }
+  .email-div {
+    text-align: left;
+  }
+  .sub-div {
+    text-align: left;
+  }
+  .fname {
+    padding: 0px;
+  }
+  .lname {
+    padding: 0px;
+  }
+  .mess-div {
+    text-align: left;
+  }
+  .form-div {
+    padding: 10px;
+  }
+}

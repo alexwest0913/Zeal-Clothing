@@ -1,0 +1,59 @@
+.f-div {
+  background-color: black;
+  height: 200px;
+  margin-top: 80px;
+  padding: 50px 60px;
+}
+
+.f-heading {
+  font-family: "Gruppo", cursive;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.f-heading a {
+  text-decoration: none;
+  color: tan;
+}
+
+.f-links {
+  padding: 30px 0px;
+  display: flex;
+}
+
+.f-links li:hover {
+  cursor: pointer;
+  color: tan;
+}
+
+.fa-instagram {
+  color: white;
+  font-size: 20px;
+}
+
+.fa-facebook {
+  color: white;
+  padding: 0px 25px;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.p-div {
+  text-align: center;
+  font-family: "Gruppo", cursive;
+}
+
+.p {
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .f-heading {
+    font-size: 40px;
+  }
+  .fa-facebook {
+    padding: 0px 15px;
+  }
+}

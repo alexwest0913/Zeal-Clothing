@@ -1,0 +1,30 @@
+.about-head {
+  letter-spacing: 1px;
+  font-size: 50px;
+  font-family: 'Gruppo', cursive;
+  padding: 30px 0px 30px 50px;
+}
+
+.about-div {
+  font-family: 'Gruppo', cursive;
+  letter-spacing: 1px;
+  max-width: 120ch;
+  line-height: 1.5rem;
+  padding: 50px 20px 50px 50px;
+}
+
+.about-p {
+  font-family: 'Gruppo', cursive;
+  padding-bottom: 118px;
+  font-size: 20px;
+}
+
+.about-est {
+  font-family: 'Gruppo', cursive;
+}
+
+@media (max-width: 500px) {
+  .about-head {
+    font-size: 40px;
+  }
+}
